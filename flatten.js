@@ -21,7 +21,7 @@ const assertArraysEqual = function(arr1, arr2) {
 const flatten = function(arr){
   let newArr = []
   for (let val of arr){
-    checkArr = Array.isArray(val)
+    let checkArr = Array.isArray(val)
     // console.log(checkArr)
     if (checkArr == true){
       for (let nestedVal of val){
@@ -31,9 +31,11 @@ const flatten = function(arr){
     newArr.push(val)
     } 
   }
-  console.log(newArr)
+  return newArr;
 }
 
 
 
 flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // should pass
+
