@@ -27,13 +27,13 @@ const middle = function(arr) {
     return middleOfArr;
   } else if (arrLength % 2 !== 0) {
     let num = (arrLength + 1) / 2;
-    middleOfArr.push(num);
+    middleOfArr.push(arr[num - 1]);
     // console.log(middleOfArr);
     return middleOfArr;
   } else if (arrLength % 2 === 0) {
     let firstNum = arrLength / 2;
     let secondNum = firstNum + 1;
-    middleOfArr.push(firstNum, secondNum);
+    middleOfArr.push(arr[firstNum - 1], arr[secondNum - 1]);
     // console.log(middleOfArr);
     return middleOfArr;
   }
@@ -48,5 +48,10 @@ middle([1, 2, 3, 4, 5]); // => [3]
 middle([1, 2, 3, 4]); // => [2, 3]
 middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
 
+
+assertArraysEqual(middle([1]), ([])); // => []
+assertArraysEqual(middle([1, 2]), ([])); // => []
 assertArraysEqual(middle([1, 2, 3]), ([2])); // should pass
+assertArraysEqual(middle([1, 2, 3, 4]), ([2, 3])); // should pass
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), ([3, 4])); // should pass
 
