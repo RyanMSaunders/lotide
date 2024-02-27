@@ -33,9 +33,9 @@ const eqObjects = function(object1, object2){
 
   for(let key of object1Keys){
     if (Array.isArray(object1[key])){
-      return eqArrays(object1[key], object2[key])
+      result == eqArrays(object1[key], object2[key])
     } else if(object1[key] !== object2[key]){
-      return false
+      result == false
     }  
   }
 
