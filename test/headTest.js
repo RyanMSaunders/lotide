@@ -18,7 +18,7 @@ describe("#head", () => {
   });
 
   it("fails to return 5 for ['2']", () => {
-    assert.strictEqual(head(['2']), '5'); 
+    assert.notStrictEqual(head(['2']), '5'); 
   });
 
   it("returns undefined for []", () => {
