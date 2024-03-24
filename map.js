@@ -44,3 +44,6 @@ assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ])
 assertArraysEqual(results1, [ 'g', 'c' ])
 assertArraysEqual(results1, [ 'c', 't', 'm', 't' ])
 
+module.exports = map;
+
+
