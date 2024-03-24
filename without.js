@@ -49,3 +49,6 @@ assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 // want to try: checking for typeOf in conditional statement. creating an else statement, if arr1 is not equal to the unwanted variable, push to empty array
 
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // => should PASS
+
+module.exports = without;
+
