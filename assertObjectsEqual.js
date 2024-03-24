@@ -24,28 +24,7 @@ const eqObjects = function(object1, object2){
   
 }
 
-// const eqArrays = function(arr1, arr2) {
-//   if (arr1.length !== arr2.length) {
-//     return false;
-//   }
-//   for (let i = 0; i < arr1.length; i++) {
-//     if (arr1[i] !== arr2[i]) {
-//       return false;
-//     }
-//   }
-//   return true;
-// };
 
-// const assertArraysEqual = function(arr1, arr2) {
-//   if (eqArrays(arr1, arr2) === true) {
-//     console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-//   } else {
-//     console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-//   }
-// };
-
-/*Instead of doing an eqArrays check though, this assertion function 
-will make use of your eqObjects function for object comparison. */
 
 const assertObjectsEqual = function(actualObject, expectedObject) {
   const inspect = require('util').inspect;
@@ -67,3 +46,4 @@ const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"]
 assertObjectsEqual(shirtObject, anotherShirtObject) // => true
 assertObjectsEqual(multiColorShirtObject, longSleeveMultiColorShirtObject) // => false
 
+module.exports = assertObjectsEqual;
