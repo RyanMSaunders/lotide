@@ -24,8 +24,7 @@ const eqObjects = function(object1, object2){
   
   let object1Keys = Object.keys(object1);
   let object2Keys = Object.keys(object2)
-  console.log(object1Keys.length)
-  console.log(object2Keys.length)
+  
 
   if(object1Keys.length !== object2Keys.length) {
     return false
