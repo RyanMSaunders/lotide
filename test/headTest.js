@@ -17,7 +17,7 @@ describe("#head", () => {
     assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"); 
   });
 
-  it("fails to return 5 for ['2']", () => {
+  it("does not return 5 for ['2']", () => {
     assert.notStrictEqual(head(['2']), '5'); 
   });
 
