@@ -22,7 +22,6 @@ const flatten = function(arr){
   let newArr = []
   for (let val of arr){
     let checkArr = Array.isArray(val)
-    // console.log(checkArr)
     if (checkArr == true){
       for (let nestedVal of val){
         newArr.push(nestedVal)
@@ -36,8 +35,8 @@ const flatten = function(arr){
 
 
 
-flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // should pass
+flatten([1, 2, [3, 4], 5, [6]]) 
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); 
 
 module.exports = flatten;
 
