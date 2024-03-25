@@ -21,7 +21,6 @@ const assertArraysEqual = function(arr1, arr2) {
 
 const letterPositions = function(sentence) {
   const results = {};
-  // logic to update results here
   for (let i in sentence){
     if (sentence[i] != " "){
       if (results[sentence[i]]){
@@ -34,15 +33,14 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-// console.log(letterPositions("Ryann Saunnders"))
 
 const result1 = letterPositions("Ryann Saunnders");
 
 
-assertArraysEqual( result1["R"], [0]) // => true
-assertArraysEqual( result1["y"], [1]) // => true
-assertArraysEqual( result1["a"], [2, 7]) // => true
-assertArraysEqual( result1["n"], [3, 4, 9, 10]) // => true
+assertArraysEqual( result1["R"], [0]) 
+assertArraysEqual( result1["y"], [1]) 
+assertArraysEqual( result1["a"], [2, 7]) 
+assertArraysEqual( result1["n"], [3, 4, 9, 10]) 
 
 assertArraysEqual(letterPositions("hello world").e, [1]);
 assertArraysEqual(letterPositions("hello word").o, [4, 7]);
