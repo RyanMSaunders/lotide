@@ -25,7 +25,6 @@ assertEqual(result1["y"], 1);
 assertEqual(result1["a"], 1);
 assertEqual(result1["n"], 2);
 
-console.log(countLetters("Ryan"));
 
 module.exports = countLetters;
 
