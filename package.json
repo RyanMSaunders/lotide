@@ -1,0 +1,28 @@
+{
+  "name": "@ryansaunders/lotide",
+  "version": "1.0.0",
+  "description": "This library mimicks some of the functionality of the lodash library",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanMSaunders/lotide.git"
+  },
+  "author": "@ryansaunders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanMSaunders/lotide/issues"
+  },
+  "homepage": "https://github.com/RyanMSaunders/lotide#readme"
+}
