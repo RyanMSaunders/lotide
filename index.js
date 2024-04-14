@@ -1,3 +1,5 @@
+// Importing Lotide Functions
+
 const head = require('./head');
 const tail = require('./tail');
 const middle = require('./middle');
@@ -16,7 +18,7 @@ const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 
-
+// Exporting Lotide Functions
 
 module.exports = {
   head,
