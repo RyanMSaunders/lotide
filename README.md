@@ -15,9 +15,14 @@ This project was created and published by me as part of my learnings at Lighthou
 
 `npm install @ryansaunders/lotide`
 
+**Install Dependencies and DevDependencies:**
+
+`npm install mocha`
+`npm install chai`
+
 **Require it:**
 
-`const _ = require('@ryansaunders/lotide');`
+`const _ = require('@ryansaunders/lotide/index');`
 
 **Call it:**
 
