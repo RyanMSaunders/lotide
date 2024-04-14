@@ -3,7 +3,7 @@
 const assert = require('chai').assert;
 
 // Importing 'tail' function
-const tail   = require('../tail');
+const tail = require('../tail');
 
 // Testing 'tail' function
 
