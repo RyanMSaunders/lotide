@@ -1,3 +1,4 @@
+// Test for 'countOnly'
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -6,6 +7,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+
+// A function 'countOnly' that takes in a collection of items and return 
+// counts for a specific subset of those items.
 
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
@@ -23,6 +27,8 @@ const countOnly = function(allItems, itemsToCount) {
   return results;
 };
 
+
+// Testing 'countOnly'
 const firstNames = [
   "Karl",
   "Salima",
@@ -41,5 +47,7 @@ assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
+
+// Exporting 'countOnly'
 
 module.exports = countOnly;
