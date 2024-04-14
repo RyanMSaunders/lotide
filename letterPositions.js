@@ -1,3 +1,6 @@
+
+// Tests for 'letterPositions'
+
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -18,34 +21,37 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
+// A function 'letterPositions' which will return all the indices (zero-based positions) 
+// in the string where each character is found.
 
 const letterPositions = function(sentence) {
   const results = {};
-  for (let i in sentence){
-    if (sentence[i] != " "){
-      if (results[sentence[i]]){
-        results[sentence[i]].push(Number(i))
-      } else{
-        results[sentence[i]] = [Number(i)]
+  for (let i in sentence) {
+    if (sentence[i] != " ") {
+      if (results[sentence[i]]) {
+        results[sentence[i]].push(Number(i));
+      } else {
+        results[sentence[i]] = [Number(i)];
       }
     }
   }
   return results;
 };
 
+// Testing 'letterPositions'
 
 const result1 = letterPositions("Ryann Saunnders");
 
 
-assertArraysEqual( result1["R"], [0]) 
-assertArraysEqual( result1["y"], [1]) 
-assertArraysEqual( result1["a"], [2, 7]) 
-assertArraysEqual( result1["n"], [3, 4, 9, 10]) 
+assertArraysEqual(result1["R"], [0]);
+assertArraysEqual(result1["y"], [1]);
+assertArraysEqual(result1["a"], [2, 7]);
+assertArraysEqual(result1["n"], [3, 4, 9, 10]);
 
 assertArraysEqual(letterPositions("hello world").e, [1]);
 assertArraysEqual(letterPositions("hello word").o, [4, 7]);
 
-
+// Exporting 'letterPositions'
 module.exports = letterPositions;
 
 
